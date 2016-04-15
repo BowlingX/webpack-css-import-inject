@@ -1,0 +1,28 @@
+{
+  "name": "webpack-css-import-inject-loader",
+  "version": "0.1.0",
+  "description": "A loader that injects import statements based on an existing file",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BowlingX/webpack-css-import-inject-loader.git"
+  },
+  "keywords": [
+    "webpack",
+    "loader"
+  ],
+  "author": "David Heidrich",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BowlingX/webpack-css-import-inject-loader/issues"
+  },
+  "homepage": "https://github.com/BowlingX/webpack-css-import-inject-loader#readme",
+  "peerDependencies": {
+    "loader-utils": "0.x.x",
+    "source-map": "0.x.x",
+    "webpack": "1.x.x"
+  }
+}
