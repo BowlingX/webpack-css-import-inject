@@ -23,6 +23,6 @@
   "peerDependencies": {
     "loader-utils": "0.x.x",
     "source-map": "0.x.x",
-    "webpack": "1.x.x"
+    "webpack": ">= 1.x"
   }
 }
