@@ -1,6 +1,6 @@
 {
   "name": "webpack-css-import-inject-loader",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "A loader that injects import statements based on an existing file",
   "main": "index.js",
   "scripts": {
