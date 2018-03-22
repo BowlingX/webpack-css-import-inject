@@ -6,7 +6,7 @@ var loaderUtils = require('loader-utils');
 var SourceMap = require('source-map');
 
 module.exports = function(source, sourceMap) {
-    var query = loaderUtils.parseQuery(this.query);
+    var query = loaderUtils.getOptions(this);
 
     var srcFullPath = this.resourcePath;
     var srcFileNameWithoutExtension = path.basename(srcFullPath, path.extname(srcFullPath));
