@@ -42,8 +42,7 @@ module.exports = function(source, sourceMap) {
             if (sourceMap) {
                 var currentRequest = loaderUtils.getCurrentRequest(this);
                 var SourceNode = SourceMap.SourceNode;
-                var SourceMapConsumer = SourceMap.SourceMapConsumer;
-                var sourceMapConsumer = new SourceMapConsumer(sourceMap);
+                var sourceMapConsumer = new SourceMap.SourceMapConsumer(sourceMap);
                 var node = SourceNode.fromStringWithSourceMap(source, sourceMapConsumer);
 
                 node.append(inject);
