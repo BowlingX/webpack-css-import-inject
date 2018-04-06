@@ -21,15 +21,15 @@
     "url": "https://github.com/BowlingX/webpack-css-import-inject-loader/issues"
   },
   "homepage": "https://github.com/BowlingX/webpack-css-import-inject-loader#readme",
-  "devDependencies": {
+  "dependencies": {
     "loader-utils": "^1.1.0",
+    "source-map": "^0.7.2"
+  },
+  "devDependencies": {
     "semantic-release": "^15.1.5",
-    "source-map": "^0.7.2",
     "webpack": "^4.5.0"
   },
   "peerDependencies": {
-    "loader-utils": "^1.0.0",
-    "source-map": "0.x.x",
     "webpack": ">= 1.x"
   }
 }
