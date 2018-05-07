@@ -28,7 +28,7 @@ module.exports = function(source, sourceMap) {
             if (stats.isFile()) {
                 this.addDependency(file);
                 // and require
-                inject += '@import "' + file + '";\n';
+                inject += '@import "' + file.replace(/\\/g, '/') + '";\n';
             } else {
                 error = true;
             }
