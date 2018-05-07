@@ -27,8 +27,8 @@ module.exports = function(source, sourceMap) {
             // check if file exists
             if (stats.isFile()) {
                 this.addDependency(file);
-                // and require
-                inject += '@import "' + file.replace(/\\/g, '/') + '";\n';
+                // and require, make sure we unesacpe the path (on windows machines)
+                inject += '@import "' + file.replace(/\\/g, '/') + '";\n'; 
             } else {
                 error = true;
             }
