@@ -22,12 +22,12 @@
   },
   "homepage": "https://github.com/BowlingX/webpack-css-import-inject-loader#readme",
   "dependencies": {
-    "loader-utils": "^1.1.0",
-    "source-map": "^0.7.2"
+    "loader-utils": "^3.2.1",
+    "source-map": "^0.7.4"
   },
   "devDependencies": {
-    "semantic-release": "^15.1.5",
-    "webpack": "^4.5.0"
+    "semantic-release": "^20.1.1",
+    "webpack": "^5.75.0"
   },
   "peerDependencies": {
     "webpack": ">= 1.x"
