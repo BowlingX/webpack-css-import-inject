@@ -2,11 +2,10 @@
 
 var path = require('path');
 var fs = require('fs');
-var loaderUtils = require('loader-utils');
 var SourceMap = require('source-map');
 
 module.exports = function(source, sourceMap) {
-    var query = loaderUtils.getOptions(this);
+    var query = this.getOptions();
 
     var srcFullPath = this.resourcePath;
     var srcFileNameWithoutExtension = path.basename(srcFullPath, path.extname(srcFullPath));
@@ -40,7 +39,7 @@ module.exports = function(source, sourceMap) {
 
         if(!error) {
             if (sourceMap) {
-                var currentRequest = loaderUtils.getCurrentRequest(this);
+                var currentRequest = this.getCurrentRequest();
                 var SourceNode = SourceMap.SourceNode;
                 var sourceMapConsumer = new SourceMap.SourceMapConsumer(sourceMap);
                 var node = SourceNode.fromStringWithSourceMap(source, sourceMapConsumer);

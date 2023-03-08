@@ -18,7 +18,6 @@
   },
   "homepage": "https://github.com/BowlingX/webpack-css-import-inject-loader#readme",
   "dependencies": {
-    "loader-utils": "^3.2.1",
     "source-map": "^0.7.4"
   },
   "devDependencies": {
